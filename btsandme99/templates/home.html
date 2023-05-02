@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}home.html{% endblock %}
+
+{% block extra-style %} 
+<style type="text/css"> 
+.home-image { 
+	background-image: url("{% static 'img/bts.png' %}"); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	background-size: 100%; 
+	height: 500px; 
+	border-top: 10px solid #ccc; 
+	border-bottom: 10px solid #ccc; 
+	padding: 20px 0 0 20px; 
+} 
+.title {
+	color: #c80;
+	font-weight: bold;
+}
+.powered { 
+	position: relative; 
+	top: 77%; 
+	color: #cc0; 
+	font-style: italic; 
+}
+
+</style> 
+{% endblock %}
+
+{% block content %}
+	<div class="home-image"> 
+		<h2 class="title">BTS - 방탄소년단</h2> 
+		<h4 class="powered"><i class="fas fa-arrow-circle-right"></i> 방탄소년단 팬 페이지에 온 것을 환영합니다!</h4> 
+	</div>
+
+	<hr style="margin: 10px 0;">
+	
+	<div class="row text-center"> 
+		<div class="col-sm-6"> 
+			<h3>방탄소년단</h3> 
+			<p> 2013년 6월 13일에 데뷔한 빅히트 엔터테인먼트 소속 대한민국 7인조 보이 그룹이다.
+			'방탄소년단' 이라는 그룹명에는 방탄이 총알을 막아내는 것처럼, 살아가는 동안 힘든 일을 겪는 10대와 20대의 편견과 억압을 막아내고 
+			자신들의 음악과 가치를 지켜내겠다는 의미를 담고 있다. 방탄소년단을 지칭하는 'BTS'는 본래 이름인 'Bangtan Boys' 
+			혹은 'Bulletproof Boys Scouts'의 준말이었으며, 2017년 빅히트 엔터테인먼트는 방탄소년단의 공식 로고를 교체하면서 
+			과거와 미래를 아우르는 개념으로 의미를 확장시키고,'Beyond The Scene'의 준말로 의미를 추가했다. 
+			이는 매 순간마다 청춘의 장면들을 뛰어넘는다는 의미를 가지고 있다.</p> 
+		</div>
+		
+		<div class="col-sm-6"> 
+			<h3>BTS</h3> 
+			<p>It is a Korean 7-member boy group under Big Hit Entertainment that debuted on June 13, 2013. 
+			The group name'Bangtan Boy Scouts' contains the meaning of defending their music and values ​​
+			by preventing prejudice and oppression in their teens and twenties 
+			who suffer hard work during their lives, just as BTS blocks bullets. 
+			'BTS', which refers to BTS, was short for the original name'Bangtan Boys' or'Bulletproof Boys Scouts', 
+			and in 2017 Big Hit Entertainment expanded its meaning to a concept 
+			that encompasses the past and the future by replacing the official logo of BTS. 
+			And added meaning as an abbreviation of'Beyond The Scene'. 
+			This has the meaning of jumping over the scenes of youth every moment.</p> 
+		</div> 
+	</div> 
+{% endblock content %}
+{% block footer %} 
+<footer class="fixed-bottom bg-info">
+	<div class="text-white font-italic text-right mr-5">Copyright &copy; 2019 DjangoBook by shkim</div> 
+</footer> 
+{% endblock %}

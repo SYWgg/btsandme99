@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}sns_list.html{% endblock %}
+
+{% block content %}
+
+	<h1>SNS</h1> 
+	<br>
+	
+	<ul> 
+		{% for sns in object_list %} 
+		<li><a href="{% url 'sns:detail' sns.id %}">{{ sns }}</a ></li>
+		
+		{% endfor %} 
+	</ul>
+{% endblock %}

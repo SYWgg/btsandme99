@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}btsprofile_tbl_detail.html{% endblock %}
+
+{% block content %}
+
+	<h1>{{ object.name }}</h1>
+	<p>이름 : {{ object.name }}</p>
+	<p>소속사 : {{ object.company }}</p>
+	<p>소속그룹 : {{ object.group }}</p>
+
+{% endblock %}

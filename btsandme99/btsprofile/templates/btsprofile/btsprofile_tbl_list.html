@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}btsprofile_tbl_list.html{% endblock %}
+
+{% block content %}
+
+	<h1>BTS Profile</h1>
+	<br>
+	
+	<ul>
+		{% for btsprofile in object_list %}
+		<li><a href="{% url 'btsprofile:detail' btsprofile.id %}">{{ btsprofile }}</a></li>
+		{% endfor %}
+	</ul>
+{% endblock %}
